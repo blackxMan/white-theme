@@ -1,0 +1,682 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>aviwest theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+      <!--- sidebar menu -->
+      <ul class="sidebar" role="navigation">
+        <li>
+          <a href="dashboard.html"  style="height: 60px ; padding-top: 15px">
+            <img src="images/dmng.png">
+          </a>
+        </li>
+        <li>
+          <a href="dashboard.html" class="selected">
+              <i class="icons icons-sidebar dashicon"></i>
+              <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+              <i class="icons icons-sidebar server"></i>
+              <span>Serveur</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar direct"></i>
+              <span>Direct</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar enrg"></i>
+              <span>Entreg.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar began"></i>
+              <span>Began</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar audio"></i>
+              <span>Audio-video</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar connect"></i>
+              <span>Connectivité</span>
+          </a>
+        </li>
+      </ul>
+      <!-- sidebar menu -->
+
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid text-center">
+
+          <!-- help -->
+          <div id="help" class="" role="search">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="lg-aviwest"></i>
+                <i class="icons ask"></i>
+              </a>
+              <div class="dropdown-menu">
+                <p>
+                    <label for="txtSearch">Search</label>
+                    <input type="text" class="form-control dashy-textfield search-field">
+                </p>
+              </div>
+          </div>
+        </div>
+        <!-- end help -->
+
+        <!-- navbar menu right -->
+        <ul class="nav navbar-top-links navbar-right" role="navigation">
+          <li class="dropdown flat-select select-lang">
+            <select class="selectpicker">
+              <option value="stdlinux">En</option>
+              <option value="manager">Fr</option>
+            </select>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#" data-item-selection="true">
+                <i class="icons reload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#" data-item-selection="true">
+                <i class="icons savew"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="forwardMenuAction" href="javascript:;" data-item-selection="true">
+                <i class="icons forward"></i>
+              </a>
+              <div id="forwardMenuAction" class="actions-menu forward-dropdown-menu" style="padding: 0px;width:265px;">
+                <div class="panel panel-default panel-noborder panel-transparent" style="margin:0px;">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Forward</h3>
+                    <ul class="actions pull-right">
+                      <li><a href="#" class="btn-close" data-panel="forwardMenuAction" href="javascript:;"><i class="i-close"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table table-storage">
+                      <thead>
+                        <tr>
+                          <th>FILENAME</th>
+                          <th class="text-right">SIZE</th>
+                        <tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            video-1.vlc
+                          </td>
+                          <td class="text-right">
+                            <div class="checkbox">
+                                <input id="ch1" class="styled" type="checkbox" name="test">
+                                <label class="dashy-color">
+                                  153 Ko
+                                </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            video-1.vlc
+                          </td>
+                          <td class="text-right">
+                            <div class="checkbox">
+                                <input id="ch1" class="styled" type="checkbox" name="test">
+                                <label class="dashy-color">
+                                  153 Ko
+                                </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            video-1.vlc
+                          </td>
+                          <td class="text-right">
+                            <div class="checkbox">
+                                <input id="ch1" class="styled" type="checkbox" name="test">
+                                <label class="dashy-color">
+                                  153 Ko
+                                </label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="2" >
+                            <div class="btn-group pull-right">
+                              <button type="button" class="btn btn-default btn-scroll btn-xs"><i class="fa fa-chevron-left"></i></button>
+                              <button type="button" class="btn btn-default btn-scroll btn-xs"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <ul class="forward-config-form">
+                      <li class="form-group flat-select">
+                        <label>Emplacement :</label>
+                        <select class="selectpicker">
+                          <option value="sd-card">sd-card</option>
+                          <option value="sd-card">sd-card</option>
+                        </select>
+                      </li>
+                      <li class="form-group flat-select">
+                        <label>Studio :</label>
+                        <select class="selectpicker">
+                          <option value="stdlinux">stdlinux</option>
+                          <option value="manager">manager</option>
+                        </select>
+                      </li>
+                      <li class="form-group text-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default btn-xs"><i class="fa fa-upload"></i></button>
+                          <button type="button" class="btn btn-default btn-xs"><i class="fa fa-folder-open"></i></button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#" data-item-selection="true">
+                <i class="icons upload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#" data-item-selection="false">
+                <i class="icons notif"></i>
+              </a>
+          </li>
+          <li class="dropdown">
+              <a href="#" data-item-selection="false">
+                <i class="icons signout"></i>
+              </a>
+          </li>
+        </ul>
+        <!-- end navbar right menu -->
+
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+
+      <!-- page content-->
+      <div id="page-wrapper">
+        <div id="content" class="dashboard">
+          <div class="row">
+            <div class="col-sm-offset-2 col-xs-10 col-sm-12 col-md-8">
+              <div class="row">
+                <div class="col-sm-12 col-md-8" style="max-width:530px;padding-right:5px;">
+                  <ul class="status-bar">
+                    <li class="status-bar-group">
+                      <ul class="status-bar-group-items">
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-wifi">&nbsp;</i>
+                            <span class="mini-notif">1</span>
+                          </a>
+                        </li>
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-3g">&nbsp;</i>
+                          </a>
+                        </li>
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-4g">&nbsp;</i>
+                          </a>
+                        </li>
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-eth">&nbsp;</i>
+                          </a>
+                        </li>
+                        <li class="status-bar-item dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="actions-menu" data-panel="networkStatus" href="javascript:;">
+                            <i class="icons icon-size-3 icon-st-arrow">&nbsp;</i>
+                          </a>
+                          <div id="networkStatus" class="actions-menu network-status-panel" style="">
+                              <div class="panel panel-default panel-noborder panel-transparent" style="margin:0px;">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Network</h3>
+                                  <ul class="actions pull-right">
+
+                                  </ul>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <table class="table table-storage  table-storage-noborder">
+                                    <thead>
+                                      <tr>
+                                        <th width="20" class="text-left">TYPE</th>
+                                        <th width="30" class="text-center">ID</th>
+                                        <th width="50" class="text-center">ETAT</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-net-eth icon-size-2"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span>ETH1</span>
+                                            <i class="icons icon-eth-link icon-size-2"></i>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE LIEN
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-net-eth icon-size-2"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span>ETH2</span>
+                                            <i class="icons icon-eth-link icon-size-2"></i>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE LIEN
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-wifi-small icon-size-2"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span>WIFI</span>
+                                            <i class="icons icon-wifi-status icon-size-2"></i>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          dashy-link 192.168.4.34
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-gsm icon-size-2"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span class="disabled-status">MOD1</span>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE SIM
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-gsm icon-size-2"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span class="disabled-status">MOD2</span>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE SIM
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-size-2 icon-gsm"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span class="disabled-status">MOD3</span>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE SIM
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <i class="icons icon-size-2 icon-gsm"></i>
+                                        </td>
+                                        <td>
+                                          <label class="one-level-icon">
+                                            <span class="disabled-status">MOD4</span>
+                                          </label>
+                                        </td>
+                                        <td class="text-center dashy-color">
+                                          PAS DE SIM
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr>
+                                        <td colspan="3" >
+                                          <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-default btn-scroll btn-xs"><i class="fa fa-chevron-left"></i></button>
+                                            <button type="button" class="btn btn-default btn-scroll btn-xs"><i class="fa fa-chevron-right"></i></button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="status-bar-group">
+                      <ul class="status-bar-group-items">
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-sd-card">&nbsp;</i>
+                          </a>
+                        </li>
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-usb">&nbsp;</i>
+                          </a>
+                        </li>
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-charger">&nbsp;</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="status-bar-group">
+                      <ul class="status-bar-group-items">
+                        <li class="status-bar-item">
+                          <a href="#" class="active">
+                            <i class="icons icon-size-3 icon-connected">&nbsp;</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="panel panel-default" style="margin-top: 62px;">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Ecran DMNG-PRO</h3>
+                      </div>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-6 dmng-screen">
+                            <div class="screen-video">
+                            </div>
+                            <div class="screen-actions">
+                              <a href="#" class="btn-start-cast"><i class="fa fa-desktop fa-2x"></i></a>
+                              <ul class="screen-status">
+                                <li class="screen-status-item">PATTERN</li>
+                                <li class="screen-status-item">FR_50_HZ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-6" style="padding: 0px 0px 0px 15px;">
+                            <ul class="data-list">
+                              <li class="data-item">Duffision : <span class="pull-right">00:00:00</span></li>
+                              <li class="data-item">Profile : <span class="pull-right">stdlinux</span></li>
+                              <li class="data-item">Resolution : <span class="pull-right">QVGA</span></li>
+                              <li class="data-item">Débit video : <span class="pull-right">1374</span></li>
+                            </ul>
+                            <div class="outputRateChart">
+                              <img src="./images/outputchart.png"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6" style="padding: 0px 5px 0px 15px;">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">On air</h3>
+                          <ul class="actions" style="right: 13px;top: 0;">
+                            <li>
+                              <span class="recStart">
+                                <i class="fa fa-circle"></i>
+                                <b>REC</b>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <ul class="data-list">
+                              <li class="data-item old-dashy-select">Direct:
+                                <select class="selectpicker pull-right">
+                                  <option value="interview">INTERVIEW</option>
+                                  <option value="direct">DIRECT</option>
+                                </select>
+                              </li>
+                              <li class="data-item old-dashy-select">Studio :
+                                <select class="selectpicker pull-right">
+                                  <option value="stdlinux">stdlinux</option>
+                                  <option value="manager">manager</option>
+                                </select>
+                              </li>
+                              <li class="data-item old-dashy-select">Enregistrement :
+                                <select class="selectpicker pull-right">
+                                  <option value="sd-low">SD-LOW</option>
+                                  <option value="qvga">QVGA</option>
+                                </select>
+                              </li>
+                            </ul>
+                            <div class="text-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-xs"><i class="fa fa-play"></i></button>
+                                <button type="button" class="btn btn-default btn-xs"><i class="fa fa-floppy-o"></i></button>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"  style="padding: 0px 15px 0px 5px;">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Enregistrement</h3>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <ul class="data-list">
+                              <li class="data-item old-dashy-select">Format :
+                                <select class="selectpicker pull-right">
+                                  <option value="sd-low">SD-LOW</option>
+                                  <option value="qvga">QVGA</option>
+                                </select>
+                              </li>
+                            </ul>
+                            <div class="text-center" style="margin-top: 63px">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-xs" disabled="disabled"><i class="fa fa-floppy-o"></i></button>
+                                <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-sm-12 col-md-4" style="padding-left:5px">
+                  <div class="panel panel-default" style="">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Device Info</h3>
+                      </div>
+                      <div class="panel-body">
+                        <div class="row">
+                            <ul class="data-list">
+                              <li class="data-item">Tension d’entrée : : <span class="pull-right">14.991 V</span></li>
+                              <li class="data-item">Identifiant  : <span class="pull-right">DMNG</span></li>
+                              <li class="data-item">Identifiant matériel : <span class="pull-right">fa:04:47:15:00:00</span></li>
+                              <li class="data-item">Version du produit : <span class="pull-right">2.5.1</span></li>
+                              <li class="data-item">Date du mise à jour : <span class="pull-right">2015-05-29</span></li>
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="panel panel-default panel-noborder">
+                    <div class="panel-body">
+                      <div class="row text-center">
+                        <img src="images/memory.png"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default panel-noborder" style="padding: 15px 0px">
+                    <div class="panel-body">
+                      <div class="row text-center">
+                        <img src="images/networkcharting.png"/>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end page wrapper-->
+
+      <!-- dynamic panel-->
+      <div id="events">
+        <div class="content row">
+          <div class="panel panel-default panel-events col-xs-12">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Notification
+              </h3>
+              <ul class="actions pull-right">
+                <li><a href="#" class="btn-close"><i class="i-close"></i></a></li>
+              </ul>
+            </div>
+            <div class="panel-body">
+              <ul class="list-event">
+                <li class="list-event-item">
+                  <a href="#" data-status="success">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-exclamation-triangle"></i>
+                      <b>12:30</b>
+                    </span>
+                    <span class="text">Can’t upload the update file</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+
+                <li class="list-event-item">
+                  <a href="#"  data-status="danger">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-check"></i>
+                      <b>12:36</b>
+                    </span>
+                    <span class="text">Configuration saved successfully</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="bower_components/jqueryui/jquery-ui.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

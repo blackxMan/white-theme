@@ -1,0 +1,81 @@
+.gallery{
+
+  .gallery-heading{
+    background-color:#929191;
+    height:225px;
+    padding:40px 35px;
+
+    .gallery-title{
+      font-size: 36px;
+      /*font-family: "estrangelo_edessaregular", arial;*/
+      font-family: Arial;
+      color: #343333;
+      /*text-shadow: 2px 2px 1px rgba(0,0,0,0.4);*/
+      margin:0px;
+    }
+  }
+
+  .gallery-body{
+    margin-top:-100px;
+
+    .gallery-sidebar-left{
+      margin-top:75px;
+    }
+
+    .gallery-content{
+      padding: 5px 5px;
+      overflow: hidden;
+
+      .gallery-list-item{
+        .gallery-item{
+          width: 235px;
+          padding: 5px 5px 10px;
+          background-color: #fff;
+          border-radius: 5px;
+          display: inline-block;
+          margin: 5px 5px 5px 5px;
+          box-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+          border:1px solid #fff;
+
+          &:hover{
+            border:1px solid #1592e1;
+            box-shadow: 2px 2px 1px rgba(21,146,255,0.4);
+          }
+
+          &.selected{
+            border:1px solid #1592e1;
+            box-shadow: 2px 2px 1px rgba(21,146,255,0.4);
+          }
+
+          img{
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            width:265px;
+            width:225px;
+            margin-bottom:80px;
+            clear:both;
+          }
+
+          .info{
+            color:#636262;
+            font-size:11px;
+            font-family: arial;
+          }
+
+          .actions{
+            i{
+              cursor:pointer;
+            }
+          }
+        }
+      }
+
+
+    }
+    .gallery-sidebar-right{
+      margin-top:75px;
+    }
+  }
+
+
+}

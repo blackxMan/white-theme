@@ -1,0 +1,20 @@
+/** reset elements **/
+a{
+  padding:0px;
+  margin:0px;
+  background-color: transparent;
+  outline:none;
+  &:hover,&:visited,&:link,&:active{
+    text-decoration: none;
+    outline:none;
+  }
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style-type: none;
+}

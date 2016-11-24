@@ -1,0 +1,131 @@
+.list-event{
+  margin:10px 0px;
+  padding: 0px;
+  width:100%;
+  overflow:hidden;
+
+  .list-event-item{
+    padding:0px;
+    margin:0px 0px 4px;
+    border-radius: 5px;
+    background-color: $eventBackColor;
+    width:100%;
+    float:left;
+
+    a {
+      display:block;
+      width:100%;
+      height: 35px;
+      cursor: pointer;
+      float: left;
+
+      .icon{
+        display: block;
+        padding:10px;
+        color: $eventFontColor;
+        font-size: 7pt;
+        border-right: 1px solid $eventSeparatorColor;
+        width:35px;
+        height: 100%;
+        float: left;
+
+        b{
+          font-weight: normal;
+          font-size: 7pt;
+          color: $eventFontColor;
+          display: none;
+        }
+
+      }
+
+      &:hover{
+
+        .icon{
+          padding-top: 5px;
+          padding-left: 5px;
+
+          i{
+            padding-left: 5px;
+          }
+
+          b{
+            display:inline-block;
+            padding-top: 2px;
+          }
+
+        }
+
+        &[data-status='info']{
+          i{
+            color:#A0E569;
+          }
+        }
+
+        &[data-status='danger']{
+          i{
+            color: #a94442 ;
+          }
+        }
+
+      }
+
+
+
+      .text{
+        display: block;
+        color: #d9d7d7;
+        font-size: 8pt;
+        width: 165px;
+        float: left;
+        line-height: 13px;
+        padding: 4px 0 10px 4px;
+      }
+
+
+    }
+
+  }
+
+}
+
+
+.list-files{
+  width: 90%;
+  overflow: hidden;
+  margin: 25px auto;
+  max-height:85%;
+
+  .list-files-item{
+    position:relative;
+    background-color: #282828;
+    box-shadow: 2px 0px 2px rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 10px;
+    margin-bottom:5px;
+
+    h3{
+      color: #7b7b7b;
+      font-size:13px;
+      margin:0px;
+      padding:0px;
+    }
+
+    span{
+      color: #7b7b7b;
+      font-size:10px;
+    }
+
+    .actions{
+
+      position:absolute;
+      top:5px;
+      right:5px;
+      width:20px;
+      color: #7b7b7b;
+
+      i{
+        cursor:pointer;
+      }
+    }
+  }
+}

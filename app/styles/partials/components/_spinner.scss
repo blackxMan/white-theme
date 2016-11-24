@@ -1,0 +1,84 @@
+
+.spinner-widget{
+  display: inline-block;
+
+  .ui-spinner{
+    position:relative;
+    display:block;
+
+    .spinner{
+      position:relative;
+    }
+
+    .ui-spinner-up{
+      color:#c0bebe;
+      position:absolute;
+      top:0px;
+      right:0px;
+      height: 10px;
+      width: 15px;
+      display:block;
+      border-top-right-radius: 5px;
+
+      .ui-icon{
+        display:none;
+      }
+    }
+
+    .ui-spinner-up:before {
+      content: "\f0d8";
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      /*--adjust as necessary--*/
+      color:#c0bebe;
+      font-size: 14px;
+      position: absolute;
+      top: -4px;
+      left: 3px;
+    }
+
+    .ui-spinner-down{
+      color:#c0bebe;
+      position:absolute;
+      top:10px;
+      right:0px;
+      height: 10px;
+      width: 15px;
+      display:block;
+      border-bottom-right-radius: 5px;
+
+      .ui-icon{
+        display:none;
+      }
+    }
+
+    .ui-spinner-down:before {
+      content: "\f0d7";
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      /*--adjust as necessary--*/
+      color:#c0bebe;
+      font-size: 14px;
+      position: absolute;
+      top: -6px;
+      left: 3px;
+    }
+
+    .ui-spinner-button:hover{
+      background-color: $dashColor;
+
+      .ui-spinner-up:before{
+        color: $dashyColor !important;
+      }
+
+      .ui-spinner-down:before {
+        color: $dashyColor !important;
+      }
+
+    }
+  }
+}

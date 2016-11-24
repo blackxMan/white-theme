@@ -1,0 +1,40 @@
+.dashy-checkbox-list{
+  border: 1px solid $colorHardSkini;
+  background-color: $colorHardSkini;
+  padding: 5px 5px;
+  overflow:hidden;
+  width:100%;
+  outline: none;
+  color: $textfieldFontColor;
+  font-size: 9pt;
+  border-radius : 0px;
+  box-shadow: none !important;
+
+  .dashy-checkbox-list-item{
+    display:block;
+    width:100%;
+  }
+
+  .dashy-checkbox-list-sub{
+    width:100%;
+    overflow:hidden;
+    border-left: 1px solid $colorOpenHardSkini;
+    margin-left:4px;
+    padding-left: 15px;
+
+    li{
+      width:100%;
+      display:block;
+      position:relative;
+
+      &:before{
+        content:"---";
+        position: absolute;
+        color: $colorOpenHardSkini;
+        font-size:12px;
+        top: -2px;
+        left: -15px;
+      }
+    }
+  }
+}

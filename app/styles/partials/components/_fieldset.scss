@@ -1,0 +1,21 @@
+fieldset{
+  border: 1px solid $fieldsetBorderColor;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  color: $fieldsetTextColor;
+
+
+  .legend {
+    background-color: $panelBgColor;
+    font-family: $panelFont;
+    font-size: $defaultFontSize;
+    display: inline-block;
+    color: $fieldsetTextColor;
+    left:8px;
+    top:-9px;
+    border: 0px solid;
+    position: absolute;
+    padding: 0px 5px;
+  }
+}

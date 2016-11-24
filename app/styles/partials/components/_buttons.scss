@@ -1,0 +1,102 @@
+
+
+.btn-close{
+  width:20px !important;
+  min-width:20px !important;
+  height:20px !important;
+  min-height:20px !important;
+  cursor:pointer;
+  display:inline-block;
+  padding: 0px 0px 0px 4px !important;
+  outline: none !important;
+
+  &:hover{
+    border-radius: 50% !important;
+    background-color:  #b40000 !important;
+  }
+}
+
+.btn-remove{
+  display: block;
+  background: transparent url('../images/icons.png') no-repeat scroll -253px 0px;
+  width: 19px;
+  height: 17px;
+  font-size: 0px;
+  text-indent: -55555px;
+  float: left;
+  margin: 9px 0px 0px 7px;
+  cursor: pointer;
+  outline: none !important;
+
+  &:hover{
+    background-position-y: -37px !important;
+  }
+}
+
+.btn-default{
+  color: #fff;
+  background-color: #545251;
+  border: 0px solid;
+  padding: 4px 10px;
+  border-radius: 5px;
+
+  &.btn-on{
+    border: 1px solid $brcolorOnAir;
+    background-color: $bgcolorOnAir;
+    margin-top: -1px !important;
+  }
+
+  &.btn-skiny{
+    background-color:#1d1e1e;
+    color:#a4a4a4;
+    padding-top:2px;
+  }
+}
+
+.btn-group{
+
+  .btn-default{
+    margin: 0px 2px 0px 0px;
+  }
+
+}
+
+.btn-scroll{
+  background-color:transparent;
+  padding:4px 8px;
+  border-radius: 0px;
+
+  &:hover{
+    background-color: $tableScrollBackColor;
+    color: $dashyColor;
+  }
+}
+
+.btn{
+  outline: none !important;
+
+  &.btn-transparent{
+    background-color:transparent;
+    padding:0px 0px;
+
+    &:hover{
+      color: #fff;
+    }
+
+    &:focus{
+      color: $color;
+    }
+
+  }
+
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}

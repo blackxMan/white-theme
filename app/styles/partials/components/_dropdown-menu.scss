@@ -1,0 +1,430 @@
+/* dropdown-menu */
+.dropdown-menu {
+  margin: 0px 0 0;
+  background-color: #252424;
+  border: none;
+  border-top: 1px solid $dashyColor;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.actions-menu {
+  margin: 0px 0px 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  position: absolute;
+  background: transparent url('../images/dashy-top-arrow.png') no-repeat scroll 0 0;
+  right:0;
+  left:auto;
+  text-align: left;
+  display:none;
+  z-index:1001;
+}
+
+.actionbox{
+  height: 20px;
+  margin:0px;
+  padding:0px;
+
+  .dropdown-menu {
+    margin: 0px 0 0;
+    background-color: $comboboxBackgroundColor;
+    border: none;
+    border: 1px solid $comboboxBorderColor;
+    border-radius: 0px;
+    box-shadow: none;
+
+    li {
+      a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.2;
+        font-size: $defaultFontSize;
+        color: $color;
+      }
+
+      a:hover{
+        color: $dashyColor;
+      }
+
+    }
+  }
+
+  .btn{
+
+    background-color: $comboboxBackgroundColor;
+    border: 1px solid $comboboxBorderColor;
+    color: $color;
+    padding: 0px 12px;
+    font-size: $defaultFontSize;
+    line-height: 1.428571429;
+    border-radius: 0px;
+
+  }
+
+}
+
+
+.bootstrap-select {
+  outline: none;
+  height: 20px;
+  margin:0px;
+  padding:0px;
+  width: 100% !important;
+
+  .padlf10 &{
+    .dropdown-menu{
+      li{
+        a{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  .disabled &{
+    .btn{
+      background-color: $comboboxBackgroundColorDisabled;
+      border: 1px solid $comboboxBorderColorDisabled;
+      color: $comboboxFontColorDisabled;
+      cursor: not-allowed;
+    }
+  }
+
+  .dropdown-menu {
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+    background-color: $comboboxBackgroundColor;
+    border: none;
+    border: 1px solid $comboboxBorderColor;
+    border-radius: 0px;
+    box-shadow: none;
+
+    li {
+      a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.2;
+        font-size: $defaultFontSize;
+        color: $color;
+      }
+
+      a:hover{
+        color: $dashyColor;
+      }
+
+      &.selected{
+        a{
+          background-color: $dropboxSelectedBGColor ;
+          color: $dropboxSelectedColor ;
+          outline: none;
+        }
+      }
+    }
+
+
+  }
+
+  .btn{
+    background-color: $comboboxBackgroundColor;
+    border: 1px solid $comboboxBorderColor;
+    color: $color;
+    padding: 0px 12px;
+    font-size: $defaultFontSize;
+    line-height: 1.428571429;
+    border-radius: 0px;
+    outline: none !important;
+  }
+
+  &.open {
+    .btn{
+      color: $color;
+      background-color: $comboboxBackgroundColor;
+      border: 1px solid $comboboxBorderColor;
+    }
+
+  }
+
+}
+
+
+
+.old-dashy-select{
+
+  .bootstrap-select {
+
+    &:focus{
+      outline: none;
+    }
+
+    .dropdown-menu {
+      border: none ;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: none;
+      top: 88%;
+    }
+
+    .btn{
+      border-radius:10px;
+      border: 0px solid;
+      background-color: transparent;
+      color: $dashyColor;
+      padding: 0px 0px;
+      outline: none !important;
+
+      .filter-option{
+        text-align: right;
+      }
+
+      .caret{
+        display: none;
+      }
+
+      &:hover{
+        background-color: $comboboxBackgroundColor;
+        color: $color;
+        padding: 0px 12px;
+
+        .filter-option{
+          text-align: left;
+        }
+
+        .caret{
+          display: inline-block;
+        }
+
+        .disabled &{
+          background-color: transparent;
+          color: $dashyColor;
+          padding: 0px 0px;
+
+          .filter-option{
+            text-align: right;
+          }
+
+          .caret{
+            display: none;
+          }
+
+        }
+
+      }
+
+
+
+      &:focus{
+        outline: none;
+      }
+
+    }
+
+
+    &.open{
+
+      &:focus{
+        outline: none;
+      }
+
+      .btn{
+        background-color: $comboboxBackgroundColor;
+        color: $color;
+        padding: 0px 12px;
+        border-radius: 10px 10px 0px 0px;
+
+        .filter-option{
+          text-align: left;
+        }
+
+        .caret{
+          display: inline-block;
+        }
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
+  }
+
+
+  &.old-dashy-select-default{
+
+    .bootstrap-select{
+
+      .btn {
+
+
+          background-color: $comboboxBackgroundColor;
+          color: $color;
+          padding: 0px 12px;
+          outline: none !important;
+
+          .filter-option{
+            text-align: left;
+          }
+
+          .caret{
+            display: inline-block;
+          }
+
+      }
+    }
+  }
+
+
+}
+
+
+
+.flat-select{
+
+  .bootstrap-select {
+
+    .dropdown-menu {
+      background-color: $flatComboBackColor;
+
+      li {
+
+        display: block;
+        width: 100%;
+
+        a {
+          text-align: left;
+          line-height: 1.2;
+          padding: 3px 20px;
+          display: block;
+          min-height: 23px;
+        }
+
+        a:hover{
+        }
+
+        &.selected{
+          a{
+
+          }
+        }
+      }
+
+
+    }
+
+    &:focus{
+      outline: none;
+    }
+
+    .dropdown-menu {
+      border: none ;
+      box-shadow: none;
+      top: 88%;
+    }
+
+    .btn{
+      border: 0px solid;
+      background-color: $flatComboBackColor;
+      outline: none !important;
+
+      &:before{
+        border-left: 1px solid #9c9b9b;
+        content:'';
+        display: block;
+        width:20px;
+        height: 100%;
+        position:absolute;
+        right:0;
+        top:0;
+      }
+
+      .caret{
+        right:6px;
+      }
+
+      &:hover{
+        background-color: $flatComboBackColor;
+        color: $color;
+      }
+
+      &:focus{
+        outline: none;
+      }
+
+    }
+
+
+    &.open{
+
+      &:focus{
+        outline: none;
+      }
+
+      .btn{
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
+  }
+
+  &.flat-select-hardSkini{
+
+    .bootstrap-select {
+
+      .dropdown-menu {
+        background-color: $colorHardSkini;
+        top:105%;
+        a{
+
+          padding: 5px 15px !important;
+          &:hover{
+            color: $dashyColor;
+          }
+        }
+      }
+
+      .btn{
+        background-color: $textfieldBackgroundColor;
+        border-radius:5px;
+        height:22px;
+        outline: none !important;
+        &:before{
+          width:23px;
+        }
+
+        .caret{
+          right:8px;
+        }
+      }
+    }
+  }
+
+  &.flat-select-normal{
+
+    .bootstrap-select {
+
+      .dropdown-menu {
+        background-color: $textfieldBackgroundColor;
+        a{
+          padding: 5px 15px !important;
+          &:hover{
+            color: $dashyColor;
+          }
+        }
+      }
+
+      .btn{
+        background-color: $textfieldBackgroundColor;
+        outline: none !important;
+      }
+    }
+
+  }
+
+}

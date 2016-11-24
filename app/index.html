@@ -1,0 +1,648 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>aviwest theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- awsome font -->
+    <!--link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"-->
+
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+      <!--- sidebar menu -->
+      <ul class="sidebar" role="navigation">
+        <li>
+          <a href="#"  style="height: 60px ; padding-top: 15px">
+            <img src="images/dmng.png">
+          </a>
+        </li>
+        <li>
+          <a href="dashboard.html">
+              <i class="icons icons-sidebar dashicon"></i>
+              <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="selected">
+              <i class="icons icons-sidebar server"></i>
+              <span>Serveur</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar direct"></i>
+              <span>Direct</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar enrg"></i>
+              <span>Entreg.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar began"></i>
+              <span>Began</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar audio"></i>
+              <span>Audio-video</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="icons icons-sidebar connect"></i>
+              <span>Connectivité</span>
+          </a>
+        </li>
+      </ul>
+      <!-- sidebar menu -->
+
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid text-center">
+
+          <!-- help -->
+          <div id="help" class="" role="search">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icons lg-aviwest"></i>
+                <i class="icons ask"></i>
+              </a>
+              <div class="dropdown-menu">
+                <p>
+                    <label for="txtSearch">Search</label>
+                    <input type="text" class="form-control dashy-textfield search-field">
+                </p>
+              </div>
+          </div>
+        </div>
+        <!-- end help -->
+
+        <!-- navbar menu right -->
+        <ul class="nav navbar-top-links navbar-right" role="navigation">
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons reload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons savew"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons forward"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons upload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons notif"></i>
+              </a>
+          </li>
+          <li class="dropdown">
+              <a href="#">
+                <i class="icons signout"></i>
+              </a>
+          </li>
+        </ul>
+        <!-- end navbar right menu -->
+
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+
+      <!-- page content-->
+      <div id="page-wrapper">
+        <div id="content">
+          <div class="row">
+            <div class="col-sm-offset-1 col-xs-10 col-sm-12 col-md-7">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Connfiguration du serveur</h3>
+                  <ul class="actions">
+                    <li><a href="#" class="btn-close"><i class="i-close"></i></a></li>
+                  </ul>
+                </div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="list-group-item-title">
+                        <h3>Declaration Manager</h3>
+                      </div>
+                      <div class="list-group-item-body">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Activation</th>
+                              <th>Nom</th>
+                              <th>Adresse IP</th>
+                              <th>Port</th>
+                              <th>Utilisateur</th>
+                              <th>Mot de passe</th>
+                            <tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td align="right">
+                                <div class="checkbox">
+                                    <input id="checkbox1" class="styled" type="checkbox">
+                                    <label for="checkbox1">
+                                    </label>
+                                </div>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div style="margin-left: 100px">
+                          <div class="checkbox" style="margin-bottom:10px">
+                              <input id="checkbox2" class="styled" type="checkbox">
+                              <label for="checkbox2">
+                                Localisation
+                              </label>
+                          </div>
+                          <div class="checkbox">
+                              <input id="checkbox3" class="styled" type="checkbox">
+                              <label for="checkbox3">
+                                Connection Automatique
+                              </label>
+                          </div>
+                          <select class="selectpicker">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                          </select>
+                          <br>
+                          <div class="dropdown actionbox">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Dropdown
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <br>
+
+                          <fieldset>
+                            <span class="legend">Title :</span>
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+                              Show popin
+                            </button>
+                          </fielset>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="list-group-item-title">
+                        <h3>Declaration (s)</h3>
+                      </div>
+                      <div class="list-group-item-body">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Courant</th>
+                              <th>Nom</th>
+                              <th>Adresse IP</th>
+                              <th>Port</th>
+                              <th>Channel</th>
+                              <th>Utilisateur</th>
+                              <th>Mot de passe</th>
+                            <tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td align="right">
+                                <div class="radio">
+                                    <input id="radio1" class="styled" type="radio" name="test">
+                                    <label for="radio1">
+                                    </label>
+                                </div>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                              <td>
+                                <input type="text" class="form-control dashy-textfield">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Network</h3>
+                  <ul class="actions">
+                    <li>
+                      <a ng-click="refreshWifiList($event)">
+                        <i class="fa fa-refresh"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="modemMenuConfig" href="javascript:;" data-item-selection="false">
+                        <i class="fa fa-cog"></i>
+                      </a>
+                      <div id="modemMenuConfig" class="actions-menu setting-dropdown-menu" style="padding: 0px; width:265px; top: 22px; right: -5px;">
+                        <div class="panel panel-default panel-noborder panel-transparent" style="margin:0px;">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Modem Setting</h3>
+                            <span class="arrowers"></span>
+                          </div>
+                          <div class="panel-body">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="checkbox" style="margin-left:15px;">
+                                  <input class="styled" type="checkbox" id="modemBOne" name="modemBOne" ng-model="modems.enabled.blockOne" ng-checked="modems.enabled.blockOne">
+                                  <label for="modemBOne">
+                                    Enabled Modems (1-2-3-4)
+                                  </label>
+                                </div>
+                                <div class="checkbox" style="margin-top: 15px;margin-left:15px;">
+                                  <input class="styled" type="checkbox" id="modemBTwo" name="modemBTwo" ng-model="modems.enabled.blockTwo" ng-checked="modems.enabled.blockTwo">
+                                  <label for="modemBTwo">
+                                    Enabled Modems (5-6-7-8)
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel-body" style="padding-left:10px;padding-right:10px">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center">Name</th>
+                        <th style="text-align: center">Mode</th>
+                        <th style="text-align: center" width="20%">IP</th>
+                        <th style="text-align: center" width="20%">Netmask</th>
+                        <th style="text-align: center" width="20%">Gateway</th>
+                        <th></th>
+                      <tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          ETH1
+                        </td>
+                        <td class="old-dashy-select old-dashy-select-default padlf10">
+                           <select class="selectpicker">
+                             <option value="DHCP">DHCP</option>
+                             <option value="STATIC">STATIC</option>
+                             <option value="GATEWAY">GATEWAY</option>
+                             <option value="OFF">OFF</option>
+                           </select>
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield  dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield  dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <i class="icons icon-eth-link icon-size-2"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          ETH2
+                        </td>
+                        <td class=" old-dashy-select  old-dashy-select-default  padlf10">
+                           <select class="selectpicker">
+                             <option value="DHCP">DHCP</option>
+                             <option value="STATIC">STATIC</option>
+                             <option value="GATEWAY">GATEWAY</option>
+                             <option value="OFF">OFF</option>
+                           </select>
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <i class="icons icon-eth-link-off icon-size-2"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          EXP
+                        </td>
+                        <td class=" old-dashy-select  old-dashy-select-default  padlf10">
+                           <select class="selectpicker">
+                             <option value="STATIC">STATIC</option>
+                             <option value="GATEWAY">GATEWAY</option>
+                           </select>
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <input class="form-control dashy-textfield dashy-textfield-black" type="text">
+                        </td>
+                        <td>
+                          <i class="icons icon-eth-link-off icon-size-2"></i>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- end page wrapper-->
+      <!-- popin -->
+      <!-- Modal -->
+      <div class="modal modal-default fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:826px;margin-top:45px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Network Settings</h4>
+              <ul class="actions">
+                <li>
+                  <button class="btn btn-transparent" type="button" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="txtWifiName">Name :</label>
+                          <input id="txtWifiName" type="text" class="dashy-textfield">
+                      </div>
+                      <div class="form-group">
+                          <label for="txtIP">IP Adderss :</label>
+                          <input id="txtIP" type="text" class="dashy-textfield">
+                      </div>
+                      <div class="form-group">
+                          <label for="txtGateway">Gateway :</label>
+                          <input id="txtGateway" type="text" class="dashy-textfield">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group flat-select flat-select-normal">
+                        <label for="txtAccessMode">Mode :</label>
+                        <select id="txtAccessMode" class="selectpicker">
+                          <option value="Client">Client</option>
+                          <option value="Access Point">Access Point</option>
+                          <option value="OFF">OFF</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="txtNetmask">Netmask :</label>
+                          <input id="txtNetmask" type="text" class="dashy-textfield">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <span class="legend">Access mode configuration :</span>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="txtEssid">ESSID :</label>
+                            <input id="txtEssid" type="text" class="dashy-textfield">
+                        </div>
+                        <div class="form-group flat-select flat-select-normal">
+                            <label for="txtSecurityMode">Security :</label>
+                            <select id="txtSecurityMode" class="selectpicker">
+                              <option value="None">None</option>
+                              <option value="WEP">WEP</option>
+                              <option value="WAP">WAP</option>
+                              <option value="WAP2">WAP2</option>
+                              <option value="WAP/WAP2">WAP/WAP2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtIPRangeStart">IP range Start :</label>
+                            <input id="txtIPRangeStart" type="text" class="dashy-textfield">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group flat-select flat-select-normal">
+                            <label for="txtWifiChannel">Channel :</label>
+                            <select id="txtWifiChannel" class="selectpicker">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Password :</label>
+                            <input id="txtPassword" type="password" class="dashy-textfield">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtIPRangeEnd">IP range end :</label>
+                            <input id="txtIPRangeEnd" type="text" class="dashy-textfield">
+                        </div>
+                      </div>
+                    </div>
+                  </fielset>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popin -->
+      <!-- dynamic panel-->
+      <div id="events">
+        <div class="content row">
+          <div class="panel panel-default panel-events col-xs-12">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Notification
+              </h3>
+              <ul class="actions pull-right">
+                <li><a href="#" class="btn-close"><i class="i-close"></i></a></li>
+              </ul>
+            </div>
+            <div class="panel-body">
+              <ul class="list-event">
+                <li class="list-event-item">
+                  <a href="#" data-status="success">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-exclamation-triangle"></i>
+                      <b>12:30</b>
+                    </span>
+                    <span class="text">Can’t upload the update file</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+
+                <li class="list-event-item">
+                  <a href="#"  data-status="danger">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-check"></i>
+                      <b>12:36</b>
+                    </span>
+                    <span class="text">Configuration saved successfully</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="bower_components/jqueryui/jquery-ui.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

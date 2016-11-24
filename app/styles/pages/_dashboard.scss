@@ -1,0 +1,63 @@
+/*** dashboard style ***/
+.dashboard{
+
+  .disabled{
+    -moz-opacity: 0.5;
+    -o-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+  }
+
+  .btn[disabled]{
+    background-color:#3e3b39;
+    color:#7c7978 !important;
+  }
+
+
+.data-list {
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 15px 0px;
+
+  .data-item {
+    color: #9c9b9b;
+    font-family: $panelFont;
+    font-size: 10pt;
+    border-bottom: 1px solid #545251;
+    padding: 4px 5px 0px;
+    line-height: 1.5;
+  }
+
+}
+
+.outputRateChart{
+  margin: 15px 0px 0px 0px;
+  text-align: center;
+}
+
+
+div[class*="col-*"]{
+  padding-right:5px;
+  padding-left:5px;
+}
+
+.bootstrap-select{
+  width:50% !important;
+}
+
+.panel-default .panel-body {
+  padding: 15px 30px;
+}
+
+
+.network-status-panel{
+  left: -220px;
+  width: 273px;
+  padding: 0px 0px 0px 0px;
+  opacity: 0.96;
+  -moz-opacity: 0.96;
+  -o-opacity: 0.96;
+  -webkit-opacity: 0.96;
+}
+
+
+}

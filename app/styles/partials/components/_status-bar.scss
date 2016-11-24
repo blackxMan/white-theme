@@ -1,0 +1,47 @@
+/** style definitions for status bar compenents*/
+
+.status-bar {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  /*overflow: hidden;*/
+
+  .status-bar-group {
+    background-color: $panelBgColor;
+    margin-right: 10px;
+    float: left;
+
+    &:last-child{
+      margin-right:0;
+    }
+
+    .status-bar-group-items{
+
+      .status-bar-item {
+        border-right: 1px solid $sepaInnerColor;
+        border-left: 1px solid $sepaOuterColor;
+        float:left;
+
+        &:last-child {
+          border-right: 0px solid;
+        }
+
+        &:first-child {
+          border-left: 0px solid;
+        }
+
+        a{
+          cursor: pointer;
+          width:53px;
+          height: 52px;
+          display: block;
+          text-align: center;
+          padding-top : 8px;
+          padding-left : 8px;
+          position: relative;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,21 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "fonts.scss";// fonts import
+
+@import "dependencies.scss";// import all dependencies modules like bootstrap and other
+
+@import  "reset.scss";// reset the style
+
+@import  "variables.scss"; // all variables configuration
+
+@import  "partials/components.scss"; // all component
+
+@import "zones/all.scss"; // all site block and pages
+
+@import "partials/classes.scss"; // usefull classes
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+}

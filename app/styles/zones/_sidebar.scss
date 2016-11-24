@@ -1,0 +1,68 @@
+/* sidebar style */
+.sidebar{
+
+  background-color: $sidebarBGC;
+  min-height: 100%;
+  width: 335px;
+  position: fixed;
+  z-index: 1000;
+
+  .main-nav{
+    width:70px;
+    float:left;
+
+    li{
+      width:100%;
+      border-top:  1px solid $sidebarBRC;
+      border-left: 1px solid $sidebarBRC;
+
+      a{
+        display:block;
+        border-bottom: 1px solid #282828;
+        width:100%;
+        height: 65px;
+        padding-top: 10px;
+        text-align: center;
+        color:$dashColor;
+
+        i{
+          width: 69px;
+          height: 30px;
+        }
+
+        span{
+          font-size: 11px;
+          color: $dashColor;
+        }
+
+        &.selected{
+          border-right: 3px solid $dashyColor;
+          color:#efefef;
+
+          i{
+            text-shadow: 2px 1px 2px rgba(0,0,0,0.4);
+          }
+
+          span{
+            text-shadow: 1px 0px 1px rgb(0,0,0);
+          }
+        }
+
+      }
+
+    }
+
+    li:last-child{
+      border-bottom:  1px solid $sidebarBRC;
+    }
+  }
+
+  .sidebar-holder{
+    width: 265px;
+    float: left;
+    padding-top:32px;
+  }
+
+
+
+}

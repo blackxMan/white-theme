@@ -1,0 +1,175 @@
+/** navigation bar **/
+.navbar{
+  min-height:32px;
+}
+
+.navbar-default{
+  background-color: $navbarBGC;
+  height: 32px;
+  border: none;
+  margin: 0px 0px 0px 70px;
+  padding: 0px;
+}
+
+.navbar-top-links {
+    margin: 0px;
+    padding: 0px;
+    height: 32px;
+    li {
+      display: block;
+      float: left;
+
+        a {
+           padding: 0px;
+           min-height: 32px;
+           text-align:center;
+           i {
+             width: 32px;
+             height: 32px;
+           }
+
+           &.selected {
+
+
+             i {
+
+             }
+           }
+
+           &:hover{
+             background-color: tranparent;
+           }
+
+
+           &:focus{
+             background-color: tranparent;
+           }
+
+       }
+
+       a:hover{
+         background-color: transparent;
+         background-image: none;
+
+       }
+
+       a:hover i{
+
+       }
+    }
+
+    li.open a{
+      background-image: url('../images/arrows.png');
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center 27px;
+
+      &[data-item-selection="false"]{
+        background-image: none !important;
+      }
+
+      &:hover{
+        background-color: tranparent;
+      }
+
+
+      &:focus{
+        background-color: tranparent;
+      }
+    }
+
+
+
+    li:last-child {
+        margin-right: 5px;
+    }
+
+}
+
+/* help styles */
+
+#help {
+  width:100px;
+  margin:0px;
+  padding:0px;
+  display: inline-block;
+
+  a {
+    padding: 0px;
+    min-height: 32px;
+    display: block;
+    width: 115px;
+
+    i{
+      width: 32px;
+      height: 32px;
+      float:left;
+    }
+
+    a:hover {
+      background: transparent none no-repeat scroll center 27px;
+    }
+
+    a:hover i {
+      background-position-y: -29px;
+    }
+  }
+
+  .open a{
+    background: transparent url('../images/arrows.png') no-repeat scroll center 27px !important;
+  }
+
+  p{
+    margin:0px;
+    padding:0px;
+    width:200px;
+    label {
+      font-family: 'estrangelo_edessaregular';
+      font-weight: normal;
+      font-size: 10pt;
+      color: #d9d7d7;
+      float: left;
+      margin: 0px 10px 0px 0px;
+      padding:3px 0px 0px 0px;
+    }
+
+    input{
+
+    }
+  }
+
+  .dropdown-menu{
+    padding:5px 10px;
+  }
+}
+
+.forward-dropdown-menu{
+
+  .forward-config-form{
+    margin-top:30px;
+
+    li.form-group{
+      display:inline-block;
+      width: 100%;
+
+      label{
+        display: inline-block;
+        width: 80px;
+      }
+
+      .bootstrap-select{
+        width: 120px;
+        margin-top: 4px;
+      }
+    }
+
+  }
+}
+
+
+.select-lang{
+  padding-top: 7px;
+  .bootstrap-select {
+    width:65px !important;
+  }
+}

@@ -1,0 +1,13 @@
+#page-wrapper {
+    padding: 0px 0px 0px 335px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+    transition: width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    z-index: 300;
+}
+
+#content{
+  padding: 0px 0px 25px;
+}

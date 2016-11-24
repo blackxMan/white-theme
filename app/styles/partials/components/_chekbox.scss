@@ -1,0 +1,82 @@
+/* checkbox style */
+
+.checkbox {
+  padding: 0px;
+  margin: 0px;
+
+  label {
+    color: $chekcboxTextColor;
+    font-size:  $defaultFontSize;
+    font-family:  $defaultFont;
+
+    &::before{
+      content: "";
+      border: 0px solid;
+      border-radius: 3px;
+      background-color: $colorHardSkini;
+      width:15px;
+      height:15px;
+      outline: none !important;
+    }
+
+    &::after{
+      left: -1px;
+      top: -5px;
+      font-family: arial;
+      font-size: 15px;
+      font-weight: normal;
+      color: $dashyColor;
+    }
+
+  }
+
+  &.checkbox-open-hard-skini{
+    label {
+      &::before{
+        background-color: $colorOpenHardSkini;
+
+      }
+    }
+  }
+
+}
+
+
+.radio{
+  padding: 0px;
+  margin: 0px;
+
+  label{
+    color: $chekcboxTextColor;
+    font-size:  $defaultFontSize;
+    font-family:  $defaultFont;
+
+    &::before{
+      border: 1px solid $colorHardSkini;
+      background-color: $colorHardSkini;
+      width:15px;
+      height:15px;
+      outline: none !important;
+    }
+
+    &::after{
+      left: 2px;
+      top: 2px;
+      font-family: arial;
+      font-size: 15px;
+      font-weight: normal;
+      background-color: $dashyColor;
+
+    }
+  }
+
+  input[type="radio"]{
+
+    &:checked + label{
+
+      &::before {
+        border-color: $dashyColor;
+      }
+    }
+  }
+}

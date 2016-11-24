@@ -1,0 +1,903 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>aviwest theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- awsome font -->
+    <!--link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"-->
+
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="bower_components/jquery.scrollbar/jquery.scrollbar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+      <!--- sidebar menu -->
+      <div class="sidebar">
+        <ul class="main-nav" role="navigation">
+          <li>
+            <a href="#"  style="height: 60px ; padding-top: 15px;font-style:italic;color:#a4a4a4;text-shadow: 1px 1px 2px rgba(0,0,0,0.5)">
+              PRO<br>
+              Viewer
+            </a>
+          </li>
+          <li>
+            <a href="dashboard.html">
+                <i class="fa fa-tachometer fa-2x"></i>
+                <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="selected">
+                <i class="fa fa-desktop fa-2x"></i>
+                <span>Players</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-share-alt fa-2x"></i>
+                <span>Groupes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-th-large fa-2x"></i>
+              <span>Layouts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-list fa-2x"></i>
+                <span>PlayDocs</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-history fa-2x"></i>
+                <span>Planification</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-rss-square fa-2x"></i>
+                <span>Flux RSS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-cog fa-2x"></i>
+                <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-holder">
+          <div class="panel panel-default panel-sidebar">
+            <div class="panel-heading">
+              <h3 class="panel-title">Programme</h3>
+              <ul class="actions">
+                <li>
+                  <a data-toggle="actions-menu" data-panel="newProgrammePanel" data-item-selection="false" style="cursor:pointer"><i class="fa fa-plus" style="font-size:11px;color:#61b0e9;margin-right:5px"></i>
+                  </a>
+                  <!-- new Programme panel -->
+                  <div id="newProgrammePanel" class="actions-menu setting-dropdown-menu no-background-img" style="right:-245px;top:-2px">
+                    <div class="panel panel-default panel-noborder panel-dropdownmenu  panel-left-popin-style" style="margin:0px;width:245px;">
+                      <div class="panel-heading" style="padding-left:10px">
+                        <h3 class="panel-title">Add new programme</h3>
+                        <span class="arrowers" style="right: 16px"></span>
+                      </div>
+                      <div class="panel-body" style="padding: 0px 10px 5px;">
+                        <div class="form-group flat-select flat-select-hardSkini">
+                          <label for="programmeName">Programme name:</label>
+                          <input class="dashy-textfield dashy-textfield-rounded" id="programmeName" name="programmeName"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="playersOn">Players :</label>
+                          <div class="dashy-rounded scrollbar-inner" style="max-height:150px !important;">
+                            <ul class="dashy-checkbox-list">
+                              <li class="dashy-checkbox-list-item">
+                                <i class="fa fa-minus" style="float: left;font-size:10px;cursor:pointer;margin-right:5px;margin-top:2px;"></i>
+                                <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px;float:left">
+                                    <input id="checkbox1" class="styled" type="checkbox">
+                                    <label for="checkbox1">
+                                      Tanger Med
+                                    </label>
+                                </div>
+                                <ul class="dashy-checkbox-list-sub">
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_1" class="styled" type="checkbox">
+                                        <label for="checkbox1_1">
+                                          Tanger Med 1
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_2" class="styled" type="checkbox">
+                                        <label for="checkbox1_2">
+                                          Tanger Med 2
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_3" class="styled" type="checkbox">
+                                        <label for="checkbox1_3">
+                                          Tanger Med 3
+                                        </label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="dashy-checkbox-list-item">
+                                <i class="fa fa-minus" style="float: left;font-size:10px;cursor:pointer;margin-right:5px;margin-top:2px;"></i>
+                                <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px;float:left">
+                                    <input id="checkbox1" class="styled" type="checkbox">
+                                    <label for="checkbox1">
+                                      Gzanaya
+                                    </label>
+                                </div>
+                                <ul class="dashy-checkbox-list-sub">
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_1" class="styled" type="checkbox">
+                                        <label for="checkbox1_1">
+                                          gzanaya 1
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_2" class="styled" type="checkbox">
+                                        <label for="checkbox1_2">
+                                          gzanay 2
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_3" class="styled" type="checkbox">
+                                        <label for="checkbox1_3">
+                                          gzanaya 3
+                                        </label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="dashy-checkbox-list-item">
+                                <i class="fa fa-plus" style="float: left;font-size:10px;cursor:pointer;margin-right:5px;margin-top:2px;"></i>
+                                <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px;float:left">
+                                    <input id="checkbox1" class="styled" type="checkbox">
+                                    <label for="checkbox1">
+                                      Tanger Med
+                                    </label>
+                                </div>
+                                <ul class="dashy-checkbox-list-sub">
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_1" class="styled" type="checkbox">
+                                        <label for="checkbox1_1">
+                                          Tanger Med 1
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_2" class="styled" type="checkbox">
+                                        <label for="checkbox1_2">
+                                          Tanger Med 2
+                                        </label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="checkbox checkbox-open-hard-skini" style="padding-left:20px">
+                                        <input id="checkbox1_3" class="styled" type="checkbox">
+                                        <label for="checkbox1_3">
+                                          Tanger Med 3
+                                        </label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <center>
+                            <button class="btn btn-default">Add</button>
+                          </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-body" style="min-height:350px">
+              <ul class="dragnselect-list">
+                <li class="item">
+                  <a class="item-link" href="#">Planning programme 2015</a>
+                  <div class="actions">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <a  class="item-link" href="#">Planning programme 2015</a>
+                  <div class="actions">
+                    <span class="fa fa-eye"></span>
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <a  class="item-link" href="#">Planning programme 2015</a>
+                  <div class="actions">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <a class="item-link" href="#">Planning programme 2015</a>
+                  <div class="actions">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-footer">
+              <ul class="items-navigation">
+                <li><a href="#"><i class="fa fa-backward"></i></a></li>
+                <li><a href="#"><i class="fa fa-caret-left" style="font-size:15px;padding-top:4px"></i></a></li>
+                <li><input class="dashy-textfield dashy-search-field dashy-textfield-rounded" style="width:205px"></li>
+                <li><a href="#"><i class="fa fa-caret-right" style="font-size:15px;padding-top:4px"></i></a></li>
+                <li><a href="#"><i class="fa fa-forward"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-default panel-sidebar" style="margin-top:3px">
+            <div class="panel-heading">
+              <h3 class="panel-title">Sequence</h3>
+              <ul class="actions">
+                <li>
+                  <a href="#"><i class="fa fa-plus" style="font-size:11px;color:#61b0e9;margin-right:5px"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-body" style="min-height:301px">
+              <ul class="dragnselect-list-event">
+                <li class="item">
+                  <img src="images/layout.png"/>
+                  <a href="#">Planning programme 2015</a>
+                  <ul class="timeline">
+                    <li>29 Fer 15 - 08:30</li>
+                    <li>30 Fer 15 - 08:30</li>
+                  </ul>
+                  <div class="actions" style="top:10px">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-files-o"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <img src="images/layout.png"/>
+                  <a href="#">Planning programme 2015</a>
+                  <ul class="timeline">
+                    <li>29 Fer 15 - 08:30</li>
+                    <li>30 Fer 15 - 08:30</li>
+                  </ul>
+                  <div class="actions" style="top:10px">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-files-o"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <img src="images/layout.png"/>
+                  <a href="#">Planning programme 2015</a>
+                  <ul class="timeline">
+                    <li>29 Fer 15 - 08:30</li>
+                    <li>30 Fer 15 - 08:30</li>
+                  </ul>
+                  <div class="actions" style="top:10px">
+                    <span class="fa fa-edit"></span>
+                    <span class="fa fa-files-o"></span>
+                    <span class="fa fa-times"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-footer">
+              <ul class="items-navigation">
+                <li><a href="#"><i class="fa fa-backward"></i></a></li>
+                <li><a href="#"><i class="fa fa-caret-left" style="font-size:15px;padding-top:4px"></i></a></li>
+                <li><input class="dashy-textfield dashy-search-field dashy-textfield-rounded" style="width:205px"></li>
+                <li><a href="#"><i class="fa fa-caret-right" style="font-size:15px;padding-top:4px"></i></a></li>
+                <li><a href="#"><i class="fa fa-forward"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu -->
+
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid text-center">
+
+          <!-- help -->
+          <div id="help" class="" role="search">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icons lg-aviwest"></i>
+                <i class="icons ask"></i>
+              </a>
+              <div class="dropdown-menu">
+                <p>
+                    <label for="txtSearch">Search</label>
+                    <input type="text" class="form-control dashy-textfield dashy-textfield-rounded search-field">
+                </p>
+              </div>
+          </div>
+        </div>
+        <!-- end help -->
+
+        <!-- navbar menu right -->
+        <ul class="nav navbar-top-links navbar-right" role="navigation">
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons reload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons savew"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons forward"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons upload"></i>
+              </a>
+              <div class="dropdown-menu">
+                test
+              </div>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle nav-menuitem" data-toggle="dropdown" href="#">
+                <i class="icons notif"></i>
+              </a>
+          </li>
+          <li class="dropdown">
+              <a href="#">
+                <i class="icons signout"></i>
+              </a>
+          </li>
+        </ul>
+        <!-- end navbar right menu -->
+
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+
+      <!-- page content-->
+      <div id="page-wrapper">
+        <div id="content">
+          <div class="row" style="padding-top:30px">
+            <!-- dynamic content -->
+            <div class="col-md-10 col-md-offset-1">
+              <div class="panel panel-default panel-rounded">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Dashbord prodduction</h3>
+                  <ul class="actions">
+                    <li>
+                      <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="addCellulePanel" data-item-selection="false" style="cursor:pointer">
+                        <i class="fa fa-plus"></i>
+                      </a>
+                      <div id="addCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                          <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                            <div class="panel-heading" style="padding-left:10px">
+                              <h3 class="panel-title">Ajouter Cellule</h3>
+                              <span class="arrowers" style="right: 22px"></span>
+                            </div>
+                            <div class="panel-body" style="padding: 0px 10px 5px;">
+                              <div class="form-group flat-select flat-select-hardSkini">
+                                <label for="documentName">Cellule :</label>
+                                <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                              </div>
+                              <div class="form-group flat-select flat-select-hardSkini">
+                                <label for="documentName">Objectif :</label>
+                                <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                              </div>
+                              <div class="form-group">
+                                <center>
+                                  <button class="btn btn-default">Add</button>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a style="cursor:pointer">
+                        <i class="fa fa-times"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel-body">
+                  <table class="table table-striped table-titled table-center">
+                    <thead>
+                      <tr>
+                        <th>Cellule <i class="fa fa-caret-down" style="cursor:pointer;"></i></th>
+                        <th>Objectif <i class="fa fa-caret-down" style="cursor:pointer;"></i></th>
+                        <th>Réalisé <i class="fa fa-caret-down" style="cursor:pointer;"></i></th>
+                        <th>Ecart <i class="fa fa-caret-down" style="cursor:pointer;"></i></th>
+                        <th>Status <i class="fa fa-caret-down" style="cursor:pointer;"></i></th>
+                        <th>#</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="slim-brand-danger">Cellule 1</span></td>
+                        <td>500</td>
+                        <td>200</td>
+                        <td>300</td>
+                        <td><i class="fa fa-circle fa-2x txt-danger"></i></td>
+                        <td style="position:relative">
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Identifient :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="slim-brand-success">Cellule 2</span></td>
+                        <td>700</td>
+                        <td>500</td>
+                        <td>200</td>
+                        <td><i class="fa fa-circle fa-2x txt-success"></i></td>
+                        <td>
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="slim-brand-warning">Cellule 3</span></td>
+                        <td>800</td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td><i class="fa fa-circle fa-2x txt-warning"></i></td>
+                        <td>
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="slim-brand-danger">Cellule 4</span></td>
+                        <td>700</td>
+                        <td>200</td>
+                        <td>300</td>
+                        <td><i class="fa fa-circle fa-2x txt-danger"></i></td>
+                        <td>
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="slim-brand-success">Cellule 5</span></td>
+                        <td>700</td>
+                        <td>500</td>
+                        <td>200</td>
+                        <td><i class="fa fa-circle fa-2x txt-success"></i></td>
+                        <td>
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="slim-brand-warning">Cellule 6</span></td>
+                        <td>800</td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td><i class="fa fa-circle fa-2x txt-warning"></i></td>
+                        <td>
+                          <a class="dropdown-toggle nav-menuitem" data-toggle="actions-menu" data-panel="updateCellulePanel" data-item-selection="false" style="cursor:pointer">
+                            <i class="fa fa-edit" style="cursor:pointer"></i>
+                          </a>
+                          <div id="updateCellulePanel" class="actions-menu setting-dropdown-menu" style="top: 22px;">
+                              <div class="panel panel-default panel-noborder panel-dropdownmenu" style="margin:0px;width:245px">
+                                <div class="panel-heading" style="padding-left:10px">
+                                  <h3 class="panel-title">Creation des cellule</h3>
+                                  <span class="arrowers" style="right: 50px"></span>
+                                </div>
+                                <div class="panel-body" style="padding: 0px 10px 5px;">
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Cellule :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group flat-select flat-select-hardSkini">
+                                    <label for="documentName">Objectif :</label>
+                                    <input type="text" class="slimi-textfield slimi-textfield-rounded">
+                                  </div>
+                                  <div class="form-group">
+                                    <center>
+                                      <button class="btn btn-default">Add</button>
+                                    </center>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <i class="fa fa-remove" style="cursor:pointer;color:#337ab7"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- end dynamic content-->
+          </div>
+        </div>
+      </div>
+      <!-- end page wrapper-->
+      <!-- popin -->
+      <!-- Modal -->
+      <div class="modal modal-default fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:826px;margin-top:45px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Network Settings</h4>
+              <ul class="actions">
+                <li>
+                  <button class="btn btn-transparent" type="button" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="txtWifiName">Name :</label>
+                          <input id="txtWifiName" type="text" class="dashy-textfield">
+                      </div>
+                      <div class="form-group">
+                          <label for="txtIP">IP Adderss :</label>
+                          <input id="txtIP" type="text" class="dashy-textfield">
+                      </div>
+                      <div class="form-group">
+                          <label for="txtGateway">Gateway :</label>
+                          <input id="txtGateway" type="text" class="dashy-textfield">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group flat-select flat-select-normal">
+                        <label for="txtAccessMode">Mode :</label>
+                        <select id="txtAccessMode" class="selectpicker">
+                          <option value="Client">Client</option>
+                          <option value="Access Point">Access Point</option>
+                          <option value="OFF">OFF</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="txtNetmask">Netmask :</label>
+                          <input id="txtNetmask" type="text" class="dashy-textfield">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <span class="legend">Access mode configuration :</span>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="txtEssid">ESSID :</label>
+                            <input id="txtEssid" type="text" class="dashy-textfield">
+                        </div>
+                        <div class="form-group flat-select flat-select-normal">
+                            <label for="txtSecurityMode">Security :</label>
+                            <select id="txtSecurityMode" class="selectpicker">
+                              <option value="None">None</option>
+                              <option value="WEP">WEP</option>
+                              <option value="WAP">WAP</option>
+                              <option value="WAP2">WAP2</option>
+                              <option value="WAP/WAP2">WAP/WAP2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtIPRangeStart">IP range Start :</label>
+                            <input id="txtIPRangeStart" type="text" class="dashy-textfield">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group flat-select flat-select-normal">
+                            <label for="txtWifiChannel">Channel :</label>
+                            <select id="txtWifiChannel" class="selectpicker">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Password :</label>
+                            <input id="txtPassword" type="password" class="dashy-textfield">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtIPRangeEnd">IP range end :</label>
+                            <input id="txtIPRangeEnd" type="text" class="dashy-textfield">
+                        </div>
+                      </div>
+                    </div>
+                  </fielset>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popin -->
+      <!-- dynamic panel-->
+      <div id="events">
+        <div class="content row">
+          <div class="panel panel-default panel-events col-xs-12">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Notification
+              </h3>
+              <ul class="actions pull-right">
+                <li><a href="#" class="btn-close"><i class="i-close"></i></a></li>
+              </ul>
+            </div>
+            <div class="panel-body">
+              <ul class="list-event">
+                <li class="list-event-item">
+                  <a href="#" data-status="success">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-exclamation-triangle"></i>
+                      <b>12:30</b>
+                    </span>
+                    <span class="text">Can’t upload the update file</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+
+                <li class="list-event-item">
+                  <a href="#"  data-status="danger">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-check"></i>
+                      <b>12:36</b>
+                    </span>
+                    <span class="text">Configuration saved successfully</span>
+                    <span class="btn-remove">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="bower_components/jqueryui/jquery-ui.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

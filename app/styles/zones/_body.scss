@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /*background: $bgcolor  url('../images/bg.png') no-repeat fixed center top;*/
+  background: $bgcolor  none no-repeat fixed center top;
+}
+
+#wrapper {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  position: relative;
+}
+
+.setting-dropdown-menu{
+  padding: 0px;
+
+  .arrowers{
+    background-image: url("../images/dashy-top-arrow.png");
+    background-repeat: no-repeat;
+    height: 5px;
+    position: absolute;
+    right: 6px;
+    top: -5px;
+    width: 10px;
+  }
+}

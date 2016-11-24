@@ -1,0 +1,187 @@
+/* dashytext-field form-controls */
+.dashy-textfield{
+  border: 1px solid $textfieldBackgroundColor;
+  background-color: $textfieldBackgroundColor;
+  padding: 0px 5px;
+  height: 20px;
+  width:100%;
+  outline: none;
+  color: $textfieldFontColor;
+  font-size: 9pt;
+  border-radius : 0px;
+  box-shadow: none !important;
+
+  &.dashy-textfield-rounded{
+    border-radius : 5px;
+  }
+
+  &.dashy-search-field{
+    background-image:url('../images/icon-loop.png');
+    background-repeat:no-repeat;
+    height:22px;
+    background-position: 3px 2px;
+    padding-left:15px;
+  }
+
+  &.dashy-textfield-black{
+    border: none;
+    /*background-color: $textfieldBlackBg;*/
+    background-color: transparent;
+    color: $textfieldBlackFontColor;
+    font-size: 7pt;
+    border-left: 2px solid;
+    border-bottom: 1px solid;
+
+    &[disabled]{
+      color: #504D4D;
+    }
+  }
+
+  &.dashy-textfield-login{
+    border: none;
+    /*background-color: $textfieldBlackBg;*/
+    background-color: #c89789;
+    color: #80645b;
+    font-size: 7pt;
+    border-color: #957368;
+    border-left: 3px solid;
+    border-bottom: 1px solid;
+    height: 20px;
+
+    &[disabled]{
+      color: #504D4D;
+    }
+  }
+}
+
+.dashy-textfield:focus{
+  border: 1px solid $dashyColor;
+
+  &.dashy-textfield-black{
+    background-color: $textfieldBlackBg;
+    color: $dashyColor;
+    border:none;
+    border-left: 2px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+
+  &.dashy-textfield-login{
+    color: #80645b;
+    border:none;
+    border-left: 3px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+}
+
+
+/* slimi textfield form-controls */
+.slimi-textfield{
+  border: 1px solid $textfieldBackgroundColor;
+  background-color: $textfieldBackgroundColor;
+  padding: 0px 5px;
+  height: 25px;
+  width:100%;
+  outline: none;
+  color: $textfieldFontColor;
+  font-size: 9pt;
+  border-radius : 0px;
+  box-shadow: none !important;
+
+  &.slimi-textfield-rounded{
+    border-radius : 5px;
+  }
+
+  &.slimi-search-field{
+    background-image:url('../images/icon-loop.png');
+    background-repeat:no-repeat;
+    height:22px;
+    background-position: 3px 2px;
+    padding-left:15px;
+  }
+
+  &.dashy-textfield-black{
+    border: none;
+    /*background-color: $textfieldBlackBg;*/
+    background-color: transparent;
+    color: $textfieldBlackFontColor;
+    font-size: 7pt;
+    border-left: 2px solid;
+    border-bottom: 1px solid;
+
+    &[disabled]{
+      color: #504D4D;
+    }
+  }
+
+  &.slimi-textfield-login{
+    border: none;
+    /*background-color: $textfieldBlackBg;*/
+    background-color: #c89789;
+    color: #80645b;
+    font-size: 7pt;
+    border-color: #957368;
+    border-left: 3px solid;
+    border-bottom: 1px solid;
+    height: 20px;
+
+    &[disabled]{
+      color: #504D4D;
+    }
+  }
+}
+
+
+
+/*** **/
+
+.dashy-textfield:focus{
+  border: 1px solid $dashyColor;
+
+  &.dashy-textfield-black{
+    background-color: $textfieldBlackBg;
+    color: $dashyColor;
+    border:none;
+    border-left: 2px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+
+  &.dashy-textfield-login{
+    color: #80645b;
+    border:none;
+    border-left: 3px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+}
+
+.slimi-textfield:focus{
+  border: 1px solid $slimiColor;
+
+  &.slimi-textfield-black{
+    background-color: $textfieldBlackBg;
+    color: $dashyColor;
+    border:none;
+    border-left: 2px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+
+  &.slimi-textfield-login{
+    color: #80645b;
+    border:none;
+    border-left: 3px solid $dashyColor;
+    border-bottom: 1px solid $dashyColor;
+  }
+}
+
+.dashy-textfield-dropdown{
+  background-color: $colorHardSkini;
+}
+
+.search-field{
+  border-radius: 5px;
+  background: #4a4949 url("../images/icons.png") no-repeat scroll 130px -69px;
+  float:left;
+  color: #d9d7d7;
+  padding: 2px 0px 2px 5px;
+  width: 153px;
+  height: 20px;
+}

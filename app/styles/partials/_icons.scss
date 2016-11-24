@@ -1,0 +1,385 @@
+/* icons classes */
+.icons {
+  background-color: transparent;
+  background-image: url("../images/icons.png");
+  background-repeat:no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+  display:block;
+  font-size: 0px;
+  text-indent:-4444px;
+}
+
+.panel{
+  .panel-body{
+    .icons{
+      display:inline-block;
+    }
+  }
+}
+
+
+/****** sidebar icon definition ******/
+.icons-sidebar{
+  background-image: url("../images/sidebar-icon.png");
+}
+
+.dashicon{
+    background-position: 12px 2px;
+}
+
+.selected > .dashicon{
+    background-position: -61px 2px;
+}
+
+.server{
+  background-position: 12px -66px;
+}
+
+.selected > .server{
+    background-position: -61px -66px;
+}
+
+.enrg{
+  background-position: 12px -196px;
+}
+
+.selected > .enrg{
+    background-position: -61px -196px;
+}
+
+.direct{
+  background-position: 12px -131px;
+}
+
+.selected > .direct{
+    background-position: -61px -131px;
+}
+
+.audio{
+  background-position: 12px -323px;
+}
+
+.selected > .audio{
+    background-position: -61px -323px;
+}
+
+.began{
+  background-position: 12px -258px;
+}
+
+.selected > .began{
+    background-position: -61px -258px;
+}
+
+.connect{
+  background-position: 12px -384px;
+}
+
+.selected > .connect{
+    background-position: -61px -384px;
+}
+
+/***** navbar style icon definition *****/
+
+.reload{
+  background-position: 7px 4px;
+
+  &:hover{
+    background-position: 7px -29px;
+  }
+}
+
+
+.savew{
+  background-position: -27px 4px;
+
+  &:hover{
+    background-position: -27px -29px;
+  }
+
+  &.on{
+    background-position: -260px -419px !important;
+  }
+}
+
+.forward{
+  background-position: -63px 4px;
+  &:hover{
+    background-position: -63px -29px;
+  }
+}
+
+.upload{
+  background-position: -101px 4px;
+  &:hover{
+    background-position: -101px -29px;
+  }
+}
+
+.notif{
+  background-position: -137px 4px;
+  &:hover{
+    background-position: -137px -29px;
+  }
+}
+
+.signout{
+  background-position: -172px 4px;
+  &:hover{
+    background-position: -172px -29px;
+  }
+}
+
+.lg-aviwest{
+  background-color: transparent;
+  background-image: url("../images/esvitech.png");
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position: 0px 3px;
+  width: 80px !important;
+}
+
+.ask{
+  background-position: -204px 4px;
+}
+
+
+/***** page icon definition ****/
+.i-close{
+  background-color: transparent;
+  background-image: url("../images/arrows.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0px -50px;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+
+  &:hover{
+    background-position: 0px -81px;
+  }
+
+}
+
+.icon-wifi{
+  background-position: -6px -170px;
+  margin-left:4px;
+}
+
+.icon-3g{
+  background-position: -87px -170px;
+  margin-left:2px;
+}
+
+.icon-4g{
+  background-position: -171px -170px;
+  margin-left:2px;
+}
+
+.icon-eth{
+  background-position: -260px -170px;
+  margin-left:4px;
+  margin-top:4px;
+}
+
+.icon-st-arrow{
+  background-position: -29px -67px;
+  margin-left:4px;
+  margin-top:6px;
+}
+
+.icon-sd-card{
+  background-position: -261px -103px;
+  margin-left:9px;
+  margin-top:4px;
+}
+
+.icon-usb{
+  background-position: -172px -103px;
+  margin-left:2px;
+  margin-top:1px;
+}
+
+.icon-charger{
+  background-position: -87px -103px;
+  margin-left:4px;
+  margin-top:1px;
+}
+
+.icon-connected{
+  background-position: -6px -103px;
+}
+
+
+/*** if the device status was up ***/
+.active{
+
+  .icon-wifi{
+    background-position: -6px -321px;
+
+  }
+
+  .icon-3g{
+    background-position: -87px -322px;
+  }
+
+  .icon-4g{
+    background-position: -171px -322px;
+  }
+
+  .icon-eth{
+    background-position: -260px -322px;
+  }
+
+  .icon-st-arrow{
+    background-position: -29px -67px;
+  }
+
+  .icon-sd-card{
+    background-position: -261px -238px;
+  }
+
+  .icon-usb{
+    background-position: -172px -236px;
+  }
+
+  .icon-charger{
+    background-position: -87px -239px;
+  }
+
+  .icon-connected{
+    background-position: -6px -239px;
+  }
+}
+
+.icon-net-eth{
+  background-position: -66px -67px;
+}
+
+.icon-gsm{
+  background-position: -141px -67px;
+}
+
+.icon-wifi-small{
+  background-position: -106px -67px;
+}
+
+.icon-eth-link{
+  background-position: -177px -67px;
+}
+
+.icon-eth-link-off{
+  background-position: -8px -386px;
+}
+
+.icon-wifi-off{
+  background-position: -53px -389px;
+}
+
+
+
+.icon-wifi-error{
+  background-position: -53px -423px;
+}
+
+.icon-wifi-status{
+  background-position: -210px -67px;
+
+  &[data-level="1"]{
+    background-position: -124px -385px;
+  }
+
+  &[data-level="2"]{
+    background-position: -159px -385px;
+  }
+
+  &[data-level="3"]{
+    background-position: -199px -385px;
+  }
+
+  &[data-level="4"]{
+    background-position: -236px -385px;
+  }
+
+  &[data-level="5"]{
+    background-position: -272px -385px;
+  }
+}
+
+.icon-size-3{
+  width:35px;
+  height:35px;
+}
+
+.icon-size-2{
+  width:24px;
+  height:24px;
+}
+
+.icon-size-1{
+  width:13px;
+  height:13px;
+
+  &.icon-wifi-off{
+    background-position: -98px -429px;
+  }
+
+  &.icon-wifi-available{
+    background-position: -128px -429px;
+  }
+
+  &.icon-wifi-level-1{
+    background-position: -160px -429px;
+  }
+
+  &.icon-wifi-level-2{
+    background-position: -192px -429px;
+  }
+
+  &.icon-wifi-level-3{
+    background-position: -224px -429px;
+  }
+
+  &.icon-wifi-error{
+    background-position: -98px -391px;
+  }
+}
+
+.icon-delete-doc{
+  background-position: -253px 0px;
+  width: 19px;
+  height: 17px;
+
+    &:hover{
+      background-position: -253px -36px;
+    }
+}
+
+.icon-edit-doc{
+  background-position: -281px 0px;
+  width: 19px;
+  height: 17px;
+
+    &:hover{
+      background-position: -281px -36px;
+    }
+}
+
+.icon-preview-eye{
+  background-position: -12px -468px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-del-oplus{
+  background-position: -96px -468px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-edit-pro{
+  background-position: -56px -468px;
+  width: 20px;
+  height: 20px;
+}

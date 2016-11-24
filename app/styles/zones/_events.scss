@@ -1,0 +1,19 @@
+#events{
+  min-height:578px;
+  background-color: #4a4949;
+  width:240px;
+  position: absolute;
+  top:32px;
+  right:0;
+  z-index:0;
+  display:none;
+  width: 0;
+
+  .content{
+    display:none;
+  }
+
+  .row{
+    margin : 0px;
+  }
+}

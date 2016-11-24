@@ -1,0 +1,111 @@
+/* list-group */
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+
+}
+.list-group-item:first-child {
+
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+
+
+  .list-group-item-title{
+    border-bottom: 1px solid #706d6c;
+    padding: 3px 8px;
+    background: transparent url("../images/arrows.png") no-repeat scroll -4px -20px;
+    overflow: hidden;
+
+    h3{
+      color: #9c9b9b;
+      font-weight: normal;
+      font-size: 10pt;
+      font-family: 'estrangelo_edessaregular';
+      margin:0px;
+      padding:0px;
+      width: 80%;
+      float: left;
+    }
+
+    .actions{
+      float:right;
+      line-height:0;
+
+      li{
+        padding:0px;
+        float:left;
+
+        a{
+          line-height: 0.5;
+          color:$color;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  .list-group-item-body{
+    padding: 10px 15px 0px 15px;
+  }
+
+}
+
+
+.layout-scrollbar{
+  width:100%;
+  overflow: hidden;
+
+  .layout-list-items{
+    width:100%;
+    overflow:hidden;
+    overflow-x:auto;
+    white-space:nowrap;
+    /*height:85px;*/
+    height:100px;
+    background-color:#232424;
+
+    .layout-item{
+      width:105px;
+      height:100%;
+      /*display:block;
+      float:left;*/
+      display: inline-block;
+      padding:0px;
+      padding-top:5px;
+      text-align:center;
+      box-sizing:border-box;
+      cursor:pointer;
+      position:relative;
+
+      .check{
+        color:#fff;
+        position:absolute;
+        top:0px;
+        right:0px;
+        display:none;
+      }
+
+      img{
+        border-radius:9px;
+        border:1px solid $normalBorderColor;
+      }
+
+      &.selected{
+        background-color:#393a3a;
+        .check{
+          display:block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/**
+ * import the block
+ */
+@import "body.scss",
+        "content.scss",
+        "events.scss",
+        "navbar.scss",
+        "sidebar.scss";
+
+/**
+ * import the pages style
+ */
+@import "pages.scss";
